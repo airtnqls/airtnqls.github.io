@@ -1,0 +1,32 @@
+  
+< html  lang = " ko " >
+< 머리 >
+  < 메타  문자 세트 = " utf-8 "/>
+  < title > 표기법 </ title >
+  < link  rel = " icon " type = " image / png " href = " icon.png " >
+  < link  rel = " 스타일 시트 " href = " index.css "/>
+  < 스크립트  src = " tslib.js " > </ 스크립트 >
+  < 스크립트  src = " break_infinity.min.js " > </ 스크립트 >
+  < script  src = " ad-notations.min.js " > </ 스크립트 >
+  < script  src = " ad-notations.community.min.js " > </ 스크립트 >
+</ 머리 >
+
+< 본체 >
+  < p  class = " 내용-텍스트 " >
+    이 상자에 숫자를 입력하여 모든 종류의 다른 표기법에서 어떻게 보이는지 확인하십시오.
+  </ p >
+  < div  id = " inputContainer " class = " input-container " >
+    < input  id = " number " class = " number-input " value = " 1 " oninput = " updateValues ​​() " style = " margin : 0px 10px; " >
+    쉼표 :
+    < 입력  ID = " 쉼표 " 유형 = " 확인란 " onchange = " updateValues ​​() " 스타일 = " 여백 : 3px 10px; "/>
+    장소 :
+    < input  id = " places " type = " number " size = " 3 " min = " 0 " max = " 30 " class = " number-input " value = " 2 " oninput = " updateValues ​​() " style = " margin : 0px 10px; " >
+  </ div >
+
+  < 바닥 글  클래스 = " 바닥 글 " >
+    < 클래스 = " 소스 - 링크 " HREF = " https://github.com/antimatter-dimensions/notations " > 소스 </ > 
+  </ 바닥 글 >
+
+  < 스크립트  src = " index.js " > </ 스크립트 >
+</ 본문 >
+</ html >
