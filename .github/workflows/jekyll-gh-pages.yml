@@ -13,18 +13,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set up Ruby
+      - name: Set up Ruby and Node
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.7
-          node-version: 16
 
-      - name: Install Jekyll
-        run: gem install jekyll bundler
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install jekyll bundler
+          bundle install
 
       - name: Build Jekyll Site
         run: |
-          bundle install
           bundle exec jekyll build
 
       - name: Archive Build Artifacts
